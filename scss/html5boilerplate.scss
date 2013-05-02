@@ -1,0 +1,53 @@
+//
+// HTML5 Boilerplate
+//
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, and the H5BP dev community and team.
+// 
+// Scss conversion by @JerryStillman
+//
+// To use these styles as the H5BP team intended, this file should form the
+// basis of your main stylesheet, with your primary site styles going in the
+// file `_primary.scss`. The default settings will then produce css equivalent
+// to the raw h5bp css.
+//
+
+// Set to false to disable the creation of html classes. Use @extend instead.
+// All h5bp `placeholder` class names have `h5bp-` prepended when extending.
+// E.g. @extend %h5bp-hidden;
+$h5bp-use-html-classes: true!default;
+
+// Support for Compass cross-browser support variables.
+//     http://compass-style.org/reference/compass/support/
+// These are not implemented for normalize.css as compass-normalize plugin is
+// better suited for that.
+$legacy-support-for-ie6: true!default;
+$legacy-support-for-ie7: true!default;
+
+
+// H5BP's version of normalize.css, based on version 1.1.1
+@import 'html5boilerplate/normalize';
+
+// H5BP's `opinionated defaults`
+// TODO - add some vars
+@import 'html5boilerplate/base';
+// Comment out to use your own styling for the chromeframe, or you can
+// change the class name.
+@include h5bp-chrome('chromeframe');
+
+
+// Add your own styles in here.
+@import 'primary';
+
+
+// Helper classes, these respect the $use-html-classes and
+// $legacy-support variables.
+@import 'html5boilerplate/helpers';
+
+// EXAMPLE media queries.
+@import 'html5boilerplate/media';
+
+// Print stylesheet, inlined to prevent an http request.
+@import 'html5boilerplate/print';
+
