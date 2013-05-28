@@ -6,17 +6,25 @@
 // Base styles: opinionated defaults
 // ==========================================================================
 
+$h5bp-text-color: #222!default;
+$h5bp-font-size: 1em!default;
+$h5bp-line-height: 1.4!default;
+$h5bp-selection-background: #b3d4fc!default;
+$h5bp-hr-color: #ccc!default;
+$h5bp-chromeframe-background: #ccc!default;
+$h5bp-chromeframe-color: #000!default;
+
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
+    color: $h5bp-text-color;
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: $h5bp-font-size;
+    line-height: $h5bp-line-height;
 }
 
 //
@@ -26,12 +34,12 @@ body {
 //
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $h5bp-selection-background;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $h5bp-selection-background;
     text-shadow: none;
 }
 
@@ -43,7 +51,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $h5bp-hr-color;
     margin: 1em 0;
     padding: 0;
 }
@@ -83,8 +91,8 @@ textarea {
 
   .#{$classname} {
       margin: 0.2em 0;
-      background: #ccc;
-      color: #000;
+      background: $h5bp-chromeframe-background;
+      color: $h5bp-chromeframe-color;
       padding: 0.2em 0;
   }
 

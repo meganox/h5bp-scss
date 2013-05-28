@@ -25,12 +25,20 @@ $h5bp-use-html-classes: true!default;
 $legacy-support-for-ie6: true!default;
 $legacy-support-for-ie7: true!default;
 
+// You can change H5BP's `opinionated defaults` here.
+$h5bp-text-color: #222!default;
+$h5bp-font-size: 1em!default;
+$h5bp-line-height: 1.4!default;
+$h5bp-selection-background: #b3d4fc!default;
+$h5bp-hr-color: #ccc!default;
+$h5bp-chromeframe-background: #ccc!default;
+$h5bp-chromeframe-color: #000!default;
+
 
 // H5BP's version of normalize.css, based on version 1.1.1
 @import 'html5boilerplate/normalize';
 
 // H5BP's `opinionated defaults`
-// TODO - add some vars
 @import 'html5boilerplate/base';
 // Comment out to use your own styling for the chromeframe, or you can
 // change the class name.
